@@ -11,5 +11,5 @@ class Item(Resource):
 		return {'item': agem}
 
 #Clave agem escobedo 19021
-api.add_resource(Item, 'item/AGEM=<int:agem>')
+api.add_resource(Item, '/item/AGEM=<int:agem>')
 app.run(port=5000, debug = True)
