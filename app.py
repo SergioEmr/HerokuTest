@@ -7,9 +7,9 @@ api = Api(app)
 items = []
 
 class Item(Resource):
-	def get(self,agem):
-		return {'item': agem}
+	def get(self):
+		return {'item': 'Está vivo'}
 
 #Clave agem escobedo 19021
-api.add_resource(Item, '/item/AGEM=<int:agem>')
+api.add_resource(Item, '/item')
 app.run(port=5000, debug = True)
